@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nj.Samples.MvvmWebsocketServer.RCL\Nj.Samples.MvvmWebsocketServer.RCL.csproj" />
+    <ProjectReference Include="..\Nj.Samples.MvvmWebsocketServer.Server.Hub\Nj.Samples.MvvmWebsocketServer.Server.Hub.csproj" />
+    <ProjectReference Include="..\Nj.Samples.MvvmWebsocketServer.Server.Wasm\Nj.Samples.MvvmWebsocketServer.Server.Wasm.csproj" />
+  </ItemGroup>
+
+</Project>
